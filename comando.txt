@@ -1,0 +1,2 @@
+linux y mac -> "build.github.lib": "ng build githubUserWidgetLib && cp -R ./projects/github-user-widget-lib/src/lib/assets ./dist/github-user-widget-lib/lib"
+windows ->     "build.github.lib": "ng build ggithub-user-widgett && ncp ./projects/ggithub-user-widgett/src/lib/assets ./dist/ggithub-user-widgett/lib"

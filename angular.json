@@ -105,6 +105,37 @@
           }
         }
       }
+    },
+    "ggithub-user-widgett": {
+      "projectType": "library",
+      "root": "projects/ggithub-user-widgett",
+      "sourceRoot": "projects/ggithub-user-widgett/src",
+      "prefix": "guw",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ggithub-user-widgett/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ggithub-user-widgett/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ggithub-user-widgett/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ggithub-user-widgett/src/test.ts",
+            "tsConfig": "projects/ggithub-user-widgett/tsconfig.spec.json",
+            "karmaConfig": "projects/ggithub-user-widgett/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "libreriasAngular"

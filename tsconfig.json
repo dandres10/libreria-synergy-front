@@ -7,6 +7,12 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitReturns": true,
+    "paths": {
+      "ggithub-user-widgett": [
+        "dist/ggithub-user-widgett/ggithub-user-widgett",
+        "dist/ggithub-user-widgett"
+      ]
+    },
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
